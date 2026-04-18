@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Sidebar styling from your Canva screenshot */
+.sidebar {
+    width: 30%;
+    min-width: 350px;
+    background-color: #5d1916; /* Deep Maroon */
+    color: #fdfd96; /* Pale Yellow Text */
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #000;
+}
+
+.header-text h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.input-wrapper {
+    flex-grow: 1;
+}
+
+/* The actual interactive text box */
+#user-input {
+    width: 100%;
+    height: 350px;
+    background-color: #fdfd96; /* Pale Yellow Box */
+    border: none;
+    padding: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.3rem;
+    color: #5d1916;
+    resize: none;
+    outline: none;
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.1);
+}
+
+#canvas-container {
+    flex-grow: 1;
+    background: #000;
+}
